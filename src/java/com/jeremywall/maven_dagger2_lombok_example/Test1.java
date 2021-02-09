@@ -1,5 +1,7 @@
 package com.jeremywall.maven_dagger2_lombok_example;
 
+import org.junit.Test;
+
 public class Test1 {
 
   @Test
