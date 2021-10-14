@@ -27,10 +27,10 @@
         <final.name>maven_dagger2_lombok_example</final.name>
 
         <!-- keep this dependencies alphabetized -->
-        <dagger.version>2.31.2</dagger.version>
-        <junit.version>4.13.1</junit.version>
-        <lombok.version>1.18.18</lombok.version>
-        <lombok.maven.version>1.18.16.0</lombok.maven.version>
+        <dagger.version>2.39.1</dagger.version>
+        <junit.version>4.13.2</junit.version>
+        <lombok.version>1.18.22</lombok.version>
+        <lombok.maven.version>1.18.20.0</lombok.maven.version>
         <!-- keep this dependencies alphabetized -->
 
         <maven.compiler.source>1.8</maven.compiler.source>
