@@ -27,7 +27,7 @@
         <final.name>maven_dagger2_lombok_example</final.name>
 
         <!-- keep this dependencies alphabetized -->
-        <dagger.version>2.40</dagger.version>
+        <dagger.version>2.40.1</dagger.version>
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.22</lombok.version>
         <lombok.maven.version>1.18.20.0</lombok.maven.version>
