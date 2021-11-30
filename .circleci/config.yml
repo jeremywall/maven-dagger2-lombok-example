@@ -20,7 +20,7 @@ jobs:
     docker:
       - image: cimg/openjdk:8.0
     <<: *shared
-jdk11:
+  jdk11:
     docker:
       - image: cimg/openjdk:11.0
     <<: *shared
