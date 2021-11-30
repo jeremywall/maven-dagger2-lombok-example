@@ -1,6 +1,7 @@
 # Maven Dagger 2 Lombok Example
 
 [![Build Status](https://app.travis-ci.com/jeremywall/maven-dagger2-lombok-example.svg?branch=main)](https://app.travis-ci.com/jeremywall/maven-dagger2-lombok-example)
+[![CircleCI](https://circleci.com/gh/jeremywall/maven-dagger2-lombok-example/tree/main.svg?style=svg)](https://circleci.com/gh/jeremywall/maven-dagger2-lombok-example/tree/main)
 
 Example of what I had to do to get a Maven based Java project to work with Dagger 2 and Lombok at the same time.
 
