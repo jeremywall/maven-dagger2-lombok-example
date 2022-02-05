@@ -6,7 +6,7 @@ Example of what I had to do to get a Maven based Java project to work with Dagge
 
 ## How it Works
 
-The Lombok Maven plugin executes during the generate sources phase on the Maven build process and delomboks the code in /src/main/lombok and writes the plain vanilla Java code to /target/generated-sources/delombok
+The Lombok Maven plugin executes during the generate sources phase of the Maven build process and delomboks the code located in /src/main/lombok/* and writes the plain vanilla Java code to /target/generated-sources/delombok.
 
 ## IntelliJ Configuration
 
