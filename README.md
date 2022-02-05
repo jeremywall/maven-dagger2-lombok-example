@@ -4,6 +4,8 @@
 
 Example of what I had to do to get a Maven based Java project to work with Dagger 2 and Lombok at the same time.
 
+In short, any class that contains a Lombok annotation can not be under /src/main/java. Instead, I store classes that use Lombok annotations under /src/main/lombok.
+
 ## How it Works
 
 The Lombok Maven plugin executes during the generate sources phase of the Maven build process and delomboks the code located in /src/main/lombok/* and writes the plain vanilla Java code to /target/generated-sources/delombok.
