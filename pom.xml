@@ -2,40 +2,76 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jeremywall</groupId>
-    <artifactId>maven_dagger2_lombok_example</artifactId>
+    <artifactId>maven-dagger2-lombok-example</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>maven_dagger2_lombok_example</name>
-    <description>Maven Dagger 2 Lombok Example</description>
-    <url></url>
+    <name>maven-dagger2-lombok-example</name>
+
+    <description>Maven Dagger2 Lombok Example</description>
+    
+    <url>https://github.com/jeremywall/maven-dagger2-lombok-example</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
     <organization>
         <name></name>
         <url></url>
     </organization>
+
     <issueManagement>
+        <system>Github</system>
         <url>https://github.com/jeremywall/maven-dagger2-lombok-example/issues</url>
     </issueManagement>
+
     <scm>
+        <connection>scm:git:https://github.com/jeremywall/maven-dagger2-lombok-example.git</connection>
+        <developerConnection>scm:git:git@github.com:jeremywall/maven-dagger2-lombok-example.git</developerConnection>
         <url>https://github.com/jeremywall/maven-dagger2-lombok-example</url>
-        <developerConnection>Jeremy Wall</developerConnection>
     </scm>
 
     <properties>
+        <java.version>1.8</java.version>
+
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <final.name>maven_dagger2_lombok_example</final.name>
+        <final.name>${artifactId}</final.name>
 
-        <!-- keep this dependencies alphabetized -->
+        <!-- keep these dependencies alphabetized -->
         <dagger.version>2.40.5</dagger.version>
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.22</lombok.version>
         <lombok.maven.version>1.18.20.0</lombok.maven.version>
-        <!-- keep this dependencies alphabetized -->
-
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- keep these dependencies alphabetized -->        
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.dagger</groupId>
+            <artifactId>dagger</artifactId>
+            <version>${dagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+            <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -121,25 +157,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.google.dagger</groupId>
-            <artifactId>dagger</artifactId>
-            <version>${dagger.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <scope>provided</scope>
-        </dependency>
-            <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>
 
