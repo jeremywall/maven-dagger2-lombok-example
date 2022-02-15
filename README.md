@@ -17,8 +17,6 @@ Mark the following as a Source Folder in the module:
 * `/src/main/java`
 * `/src/main/lombok`
 
-Mark the following as a Generated Source Folder in the module:
-
-* `/target/generated-sources/annotations`
-
 Initially when I first created this example code I would get IntelliJ IDE warnings about duplicate classes if the path `/target/generated-sources/delombok` was marked as a Generated Source Folder in the IntelliJ IDE's project module settings. Now I see the same path is automatically being added back as a Generated Source Folder by the IDE and the project still compiles and runs in the IDE. So I'm just going to say that your mileage may vary with this and if you get the duplicate classes warnings then try removing `/target/generated-sources/delombok` as a Generated Source Folder.
+
+Additionally, I had to add `/target/generated-sources/annotations` as a Generated Source Folder as well for the IDE to work in the past but this too no longer seems to the be the case and removing this path as a Generated Source Folder still allows the IDE to compile and run the project. As with the matter above, if you have a problem try adding or removing `/target/generated-sources/annotations` as a Generated Source Folder.
