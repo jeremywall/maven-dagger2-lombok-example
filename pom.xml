@@ -49,7 +49,7 @@
         <final.name>${artifactId}</final.name>
 
         <!-- keep these dependencies alphabetized -->
-        <dagger.version>2.40.5</dagger.version>
+        <dagger.version>2.41</dagger.version>
         <junit.version>4.13.2</junit.version>
         <lombok.version>1.18.22</lombok.version>
         <lombok.maven.version>1.18.20.0</lombok.maven.version>
