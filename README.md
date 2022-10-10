@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/jeremywall/maven-dagger2-lombok-example/tree/main.svg?style=svg)](https://circleci.com/gh/jeremywall/maven-dagger2-lombok-example/tree/main)
 
+UPDATE: I'm done with Dagger. It's hard to use and the way it does things never felt right to me. I much prefer how Guice does things by extending the Guice Module class and placing all dependencies inside the Module. Therefore, I've moved all my personal projects to [Toothpick](https://github.com/stephanenicolas/toothpick). Toothpick uses modules like Guice and is not reflection based. It's the best of both worlds in my opinion so I'm no longer maintaining this Maven/Dagger2/Lombok example project but I will leave it here for reference.
+
 Example of what I had to do to get a Maven based Java project to work with Dagger2 and Lombok at the same time.
 
 In short, any class that contains a Lombok annotation can not be under `/src/main/java`. Instead, I store classes that use Lombok annotations under `/src/main/lombok`.
