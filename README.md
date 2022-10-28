@@ -4,7 +4,7 @@
 
 ---
 
-UPDATE (2022-10-10): I'm done with Dagger. It's hard to use and the way it does things never felt right to me. I much prefer how Guice does things by extending the Guice Module class and placing all dependencies inside the Module. Therefore, I've moved all my personal projects to [Toothpick](https://github.com/stephanenicolas/toothpick). Toothpick uses modules like Guice and is not reflection based. It's the best of both worlds in my opinion so I'm no longer maintaining this Maven/Dagger2/Lombok example project but I will leave it here for reference.
+UPDATE (2022-10-10): I'm done with Dagger. It's hard to use and the way it does things never felt right to me. I much prefer how Guice does things by extending the Guice Module class and defining dependencies inside the Module. Therefore, I've moved all my personal projects to [Toothpick](https://github.com/stephanenicolas/toothpick). Toothpick uses modules like Guice and is not reflection based. It's the best of both worlds in my opinion so I'm no longer maintaining this Maven/Dagger2/Lombok example project but I will leave it here for reference.
 
 ---
 
